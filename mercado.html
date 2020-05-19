@@ -12,14 +12,38 @@
 <body>
     <header>
         <nav>
-            <div>
+            <ul class="nav">
                 <a href="index.html"><img src="img/bitcoin.gif" alt="bitcoin gif"></a>
-            </div>
-            <a href="inicio.html">Inicio</a>
-            <a href="mercado.html">Mercado</a>
-            <a href="perfil.html">Perfil</a>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="mercado.html">Mercado</a>
+                    <ul>
+                        <li><a href="#">Mercado actual</a></li>
+                        <li>
+                            <a href="#">Ultimas Noticias</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="perfil.html">Perfil</a>
+                    <ul>
+                        <li><a href="#">Mi perfil</a></li>
+                        <li><a href="#">Mis compras</a></li>
+                        <li><a href="#">Contactos</a>
+                            <ul>
+                                <li><a href="#">WhatsApp</a>
+                                    <ul>
+                                        <li><a href="#">Jhon Murcia</a></li>
+                                        <li><a href="#">Cardona</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Cerrar sesión</a></li>
+                    </ul>
+                </li>
+            </ul>
         </nav>
     </header>
+
     <script src="js/mercado.js"></script>
 </body>
 
