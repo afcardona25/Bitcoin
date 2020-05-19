@@ -3,29 +3,35 @@
     padding: 0px;
 }
 
-.center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 90vh;
-    form {
-        text-align: center;
-        padding: 25px;
-        border: 1px solid black;
-        input.logIn {
-            padding: 8px;
-            border: transparent;
-            background: rgb(107, 135, 197);
-            font-size: 20px;
-        }
-        span::before {
-            content: "-----";
-        }
-        span::after {
-            content: "-----";
-        }
-        a {
-            text-decoration: none;
+@media screen and (max-width: 2000px) {
+    .center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 90vh;
+        background: whitesmoke;
+        form {
+            text-align: center;
+            padding: 25px;
+            border: 1px solid black;
+            background: rgb(0, 0, 0);
+            color: gold;
+            input.logIn {
+                padding: 8px;
+                border: transparent;
+                background: goldenrod;
+                font-size: 20px;
+            }
+            span::before {
+                content: "-----";
+            }
+            span::after {
+                content: "-----";
+            }
+            a {
+                text-decoration: none;
+                color: gold;
+            }
         }
     }
 }
