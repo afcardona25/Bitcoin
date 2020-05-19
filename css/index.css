@@ -1,0 +1,26 @@
+* {
+  margin: 0px;
+  padding: 0px; }
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh; }
+  .center form {
+    text-align: center;
+    padding: 25px;
+    border: 1px solid black; }
+    .center form input.logIn {
+      padding: 8px;
+      border: transparent;
+      background: #6b87c5;
+      font-size: 20px; }
+    .center form span::before {
+      content: "-----"; }
+    .center form span::after {
+      content: "-----"; }
+    .center form a {
+      text-decoration: none; }
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,31 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    form {
+        text-align: center;
+        padding: 25px;
+        border: 1px solid black;
+        input.logIn {
+            padding: 8px;
+            border: transparent;
+            background: rgb(107, 135, 197);
+            font-size: 20px;
+        }
+        span::before {
+            content: "-----";
+        }
+        span::after {
+            content: "-----";
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+}
