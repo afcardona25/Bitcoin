@@ -110,4 +110,8 @@ table {
   text-align: center;
   font-size: 35pt; }
 
-/*# sourceMappingURL=mercado.css.map */
+#saldo {
+  color: green; }
+
+#saldoDolar {
+  color: green; }
