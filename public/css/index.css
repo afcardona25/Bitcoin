@@ -1,0 +1,31 @@
+* {
+  margin: 0px;
+  padding: 0px; }
+
+@media screen and (max-width: 2000px) {
+  .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSgKUP6xzw7UP6800oBK9qEip9NrQzGxDStciO6W5Hm39fyUTyU&usqp=CAU); }
+    .center form {
+      text-align: center;
+      padding: 25px;
+      border: 1px solid black;
+      background: black;
+      color: gold; }
+      .center form input.logIn {
+        padding: 8px;
+        border: transparent;
+        background: goldenrod;
+        font-size: 20px; }
+      .center form span::before {
+        content: "-----"; }
+      .center form span::after {
+        content: "-----"; }
+      .center form a {
+        text-decoration: none;
+        color: gold; } }
+
+/*# sourceMappingURL=index.css.map */

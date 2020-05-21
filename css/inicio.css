@@ -18,14 +18,16 @@ nav {
       display: block;
       margin: auto;
       list-style: none; }
-      nav .nav li a {
+      nav .nav li a,
+      nav .nav li input {
         display: block;
         color: gold;
         background-color: #000;
         font-size: 30px;
         padding: 0px;
         text-decoration: none; }
-        nav .nav li a a:hover {
+        nav .nav li a a:hover,
+        nav .nav li input a:hover {
           background-color: #434343; }
 
 img {
@@ -39,8 +41,12 @@ img {
 .nav li:hover > ul {
   display: block; }
 
-.nav li ul li {
-  position: relative; }
+.nav li ul li,
+input {
+  position: relative;
+  border: transparent;
+  width: 300px;
+  text-align: left; }
 
 .nav li ul li ul {
   right: -140px;

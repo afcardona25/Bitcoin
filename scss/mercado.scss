@@ -3,10 +3,6 @@
     padding: 0px;
 }
 
-body {
-    background: whitesmoke;
-}
-
 header,
 section {
     max-width: 1500px;
@@ -24,7 +20,8 @@ nav {
             display: block;
             margin: auto;
             list-style: none;
-            a {
+            a,
+            input {
                 display: block;
                 color: gold;
                 background-color: #000;
@@ -43,18 +40,28 @@ img {
     width: 100px;
 }
 
-.nav li ul {
-    display: none;
-    position: absolute;
-    min-width: 250px;
+//menu plegable
+.nav {
+    li {
+        ul {
+            display: none;
+            position: absolute;
+            min-width: 250px;
+        }
+    }
 }
 
+//para ver la lista plegable
 .nav li:hover>ul {
     display: block;
 }
 
-.nav li ul li {
+.nav li ul li,
+.input {
     position: relative;
+    border: transparent;
+    width: 300px;
+    text-align: left;
 }
 
 .nav li ul li ul {

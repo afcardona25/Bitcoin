@@ -3,7 +3,6 @@
     padding: 0px;
 }
 
-//precargador
 .lds-spinner {
     color: official;
     display: inline-block;
@@ -115,7 +114,6 @@
     clip-path: circle(0% at 100% 0%);
 }
 
-//menu plegable
 nav {
     background: rgb(0, 0, 0);
     .nav {
@@ -127,8 +125,7 @@ nav {
             display: block;
             margin: auto;
             list-style: none;
-            a,
-            input {
+            a {
                 display: block;
                 color: gold;
                 background-color: #000;
@@ -147,28 +144,18 @@ img {
     width: 100px;
 }
 
-//menu plegable
-.nav {
-    li {
-        ul {
-            display: none;
-            position: absolute;
-            min-width: 250px;
-        }
-    }
+.nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 250px;
 }
 
-//para ver la lista plegable
 .nav li:hover>ul {
     display: block;
 }
 
-.nav li ul li,
-.input {
+.nav li ul li {
     position: relative;
-    text-align: left;
-    width: 300px;
-    border: transparent;
 }
 
 .nav li ul li ul {

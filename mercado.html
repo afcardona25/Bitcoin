@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
     <header>
         <nav>
             <ul class="nav">
@@ -27,22 +28,18 @@
                     <ul>
                         <li><a href="#">Mi perfil</a></li>
                         <li><a href="#">Mis compras</a></li>
-                        <li><a href="#">Contactos</a>
-                            <ul>
-                                <li><a href="#">WhatsApp</a>
-                                    <ul>
-                                        <li><a href="#">Jhon Murcia</a></li>
-                                        <li><a href="#">Cardona</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
+                        <li><a href="#">Contactos</a></li>
+                        <li>
+                            <form action="index.html" onsubmit="return validate()">
+                                <input class="input" type="submit" value="Cerrar Sesion">
+                            </form>
                         </li>
-                        <li><a href="#">Cerrar sesión</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
     </header>
+
     <section>
         <table action="perfil.html" onsubmit="return validate()">
             <tr class="menu">
@@ -54,98 +51,224 @@
             </tr>
             <tr>
                 <td>Bitcoin</td>
+                <td>Precio:</td>
                 <td>
                     <form action="pago.html" onsubmit="return validate()">
-                        <input class="logIn" type="submit" value="Comprar" id="boton">
+                        <input class="logIn" type="submit" value="Comprar" id="comprar">
                     </form>
                 </td>
                 <td><input type="number"></td>
-                <td><input type="button" type="submit" value="Vender"></td>
+                <td>
+                    <form action="pago.html" onsubmit="return validate()">
+                        <input class="logIn" type="submit" value="Vender" id="vender">
+                    </form>
+                </td>
                 <td><input type="number"></td>
+                <td>Total</td>
             </tr>
             <tr>
-                <td>Petroleo</td>
-                <td><input type="button" value="Comprar"></td>
-                <td></td>
-                <td><input type="button" value="Vender"></td>
-                <td></td>
+                <td>Bitcoin</td>
+                <td>Precio:</td>
+                <td>
+                    <form action="pago.html" onsubmit="return validate()">
+                        <input class="logIn" type="submit" value="Comprar" id="comprar">
+                    </form>
+                </td>
+                <td><input type="number"></td>
+                <td>
+                    <form action="pago.html" onsubmit="return validate()">
+                        <input class="logIn" type="submit" value="Vender" id="vender">
+                    </form>
+                </td>
+                <td><input type="number"></td>
+                <td>Total</td>
             </tr>
             <tr>
-                <td>Dólar estadounidense</td>
-                <td><input type="button" value="Comprar"></td>
-                <td></td>
-                <td><input type="button" value="Vender"></td>
-                <td></td>
+                <td>Bitcoin</td>
+                <td>Precio:</td>
+                <td>
+                    <form action="pago.html" onsubmit="return validate()">
+                        <input class="logIn" type="submit" value="Comprar" id="comprar">
+                    </form>
+                </td>
+                <td><input type="number"></td>
+                <td>
+                    <form action="pago.html" onsubmit="return validate()">
+                        <input class="logIn" type="submit" value="Vender" id="vender">
+                    </form>
+                </td>
+                <td><input type="number"></td>
+                <td>Total</td>
             </tr>
             <tr>
-                <td>Euro</td>
-                <td><input type="button" value="Comprar"></td>
-                <td></td>
-                <td><input type="button" value="Vender"></td>
-                <td></td>
+                <td>Bitcoin</td>
+                <td>Precio:</td>
+                <td>
+                    <form action="pago.html" onsubmit="return validate()">
+                        <input class="logIn" type="submit" value="Comprar" id="comprar">
+                    </form>
+                </td>
+                <td><input type="number"></td>
+                <td>
+                    <form action="pago.html" onsubmit="return validate()">
+                        <input class="logIn" type="submit" value="Vender" id="vender">
+                    </form>
+                </td>
+                <td><input type="number"></td>
+                <td>Total</td>
             </tr>
             <tr>
-                <td>Yen japonés</td>
-                <td><input type="button" value="Comprar"></td>
-                <td></td>
-                <td><input type="button" value="Vender"></td>
-                <td></td>
+                <td>Bitcoin</td>
+                <td>Precio:</td>
+                <td>
+                    <form action="pago.html" onsubmit="return validate()">
+                        <input class="logIn" type="submit" value="Comprar" id="comprar">
+                    </form>
+                </td>
+                <td><input type="number"></td>
+                <td>
+                    <form action="pago.html" onsubmit="return validate()">
+                        <input class="logIn" type="submit" value="Vender" id="vender">
+                    </form>
+                </td>
+                <td><input type="number"></td>
+                <td>Total</td>
             </tr>
             <tr>
-                <td>Libra esterlina</td>
-                <td><input type="button" value="Comprar"></td>
-                <td></td>
-                <td><input type="button" value="Vender"></td>
-                <td></td>
+                <td>Bitcoin</td>
+                <td>Precio:</td>
+                <td>
+                    <form action="pago.html" onsubmit="return validate()">
+                        <input class="logIn" type="submit" value="Comprar" id="comprar">
+                    </form>
+                </td>
+                <td><input type="number"></td>
+                <td>
+                    <form action="pago.html" onsubmit="return validate()">
+                        <input class="logIn" type="submit" value="Vender" id="vender">
+                    </form>
+                </td>
+                <td><input type="number"></td>
+                <td>Total</td>
             </tr>
             <tr>
-                <td>Dólar australiano</td>
-                <td><input type="button" value="Comprar"></td>
-                <td></td>
-                <td><input type="button" value="Vender"></td>
-                <td></td>
+                <td>Bitcoin</td>
+                <td>Precio:</td>
+                <td>
+                    <form action="pago.html" onsubmit="return validate()">
+                        <input class="logIn" type="submit" value="Comprar" id="comprar">
+                    </form>
+                </td>
+                <td><input type="number"></td>
+                <td>
+                    <form action="pago.html" onsubmit="return validate()">
+                        <input class="logIn" type="submit" value="Vender" id="vender">
+                    </form>
+                </td>
+                <td><input type="number"></td>
+                <td>Total</td>
             </tr>
             <tr>
-                <td>Franco suizo</td>
-                <td><input type="button" value="Comprar"></td>
-                <td></td>
-                <td><input type="button" value="Vender"></td>
-                <td></td>
+                <td>Bitcoin</td>
+                <td>Precio:</td>
+                <td>
+                    <form action="pago.html" onsubmit="return validate()">
+                        <input class="logIn" type="submit" value="Comprar" id="comprar">
+                    </form>
+                </td>
+                <td><input type="number"></td>
+                <td>
+                    <form action="pago.html" onsubmit="return validate()">
+                        <input class="logIn" type="submit" value="Vender" id="vender">
+                    </form>
+                </td>
+                <td><input type="number"></td>
+                <td>Total</td>
             </tr>
             <tr>
-                <td>Dólar canadiense</td>
-                <td><input type="button" value="Comprar"></td>
-                <td></td>
-                <td><input type="button" value="Vender"></td>
-                <td></td>
+                <td>Bitcoin</td>
+                <td>Precio:</td>
+                <td>
+                    <form action="pago.html" onsubmit="return validate()">
+                        <input class="logIn" type="submit" value="Comprar" id="comprar">
+                    </form>
+                </td>
+                <td><input type="number"></td>
+                <td>
+                    <form action="pago.html" onsubmit="return validate()">
+                        <input class="logIn" type="submit" value="Vender" id="vender">
+                    </form>
+                </td>
+                <td><input type="number"></td>
+                <td>Total</td>
             </tr>
             <tr>
-                <td>Peso mexicano</td>
-                <td><input type="button" value="Comprar"></td>
-                <td></td>
-                <td><input type="button" value="Vender"></td>
-                <td></td>
+                <td>Bitcoin</td>
+                <td>Precio:</td>
+                <td>
+                    <form action="pago.html" onsubmit="return validate()">
+                        <input class="logIn" type="submit" value="Comprar" id="comprar">
+                    </form>
+                </td>
+                <td><input type="number"></td>
+                <td>
+                    <form action="pago.html" onsubmit="return validate()">
+                        <input class="logIn" type="submit" value="Vender" id="vender">
+                    </form>
+                </td>
+                <td><input type="number"></td>
+                <td>Total</td>
             </tr>
             <tr>
-                <td>COP</td>
-                <td><input type="button" value="Comprar"></td>
-                <td></td>
-                <td><input type="button" value="Vender"></td>
-                <td></td>
+                <td>Bitcoin</td>
+                <td>Precio:</td>
+                <td>
+                    <form action="pago.html" onsubmit="return validate()">
+                        <input class="logIn" type="submit" value="Comprar" id="comprar">
+                    </form>
+                </td>
+                <td><input type="number"></td>
+                <td>
+                    <form action="pago.html" onsubmit="return validate()">
+                        <input class="logIn" type="submit" value="Vender" id="vender">
+                    </form>
+                </td>
+                <td><input type="number"></td>
+                <td>Total</td>
             </tr>
             <tr>
-                <td>PeerCoin</td>
-                <td><input type="button" value="Comprar"></td>
-                <td></td>
-                <td><input type="button" value="Vender"></td>
-                <td></td>
+                <td>Bitcoin</td>
+                <td>Precio:</td>
+                <td>
+                    <form action="pago.html" onsubmit="return validate()">
+                        <input class="logIn" type="submit" value="Comprar" id="comprar">
+                    </form>
+                </td>
+                <td><input type="number"></td>
+                <td>
+                    <form action="pago.html" onsubmit="return validate()">
+                        <input class="logIn" type="submit" value="Vender" id="vender">
+                    </form>
+                </td>
+                <td><input type="number"></td>
+                <td>Total</td>
             </tr>
             <tr>
-                <td>Ripple</td>
-                <td><input type="button" value="Comprar"></td>
-                <td></td>
-                <td><input type="button" value="Vender"></td>
-                <td></td>
+                <td>Bitcoin</td>
+                <td>Precio:</td>
+                <td>
+                    <form action="pago.html" onsubmit="return validate()">
+                        <input class="logIn" type="submit" value="Comprar" id="comprar">
+                    </form>
+                </td>
+                <td><input type="number"></td>
+                <td>
+                    <form action="pago.html" onsubmit="return validate()">
+                        <input class="logIn" type="submit" value="Vender" id="vender">
+                    </form>
+                </td>
+                <td><input type="number"></td>
+                <td>Total</td>
             </tr>
         </table>
 

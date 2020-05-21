@@ -20,8 +20,7 @@ nav {
             display: block;
             margin: auto;
             list-style: none;
-            a,
-            input {
+            a {
                 display: block;
                 color: gold;
                 background-color: #000;
@@ -40,56 +39,21 @@ img {
     width: 100px;
 }
 
-//menu plegable
-.nav {
-    li {
-        ul {
-            display: none;
-            position: absolute;
-            min-width: 250px;
-        }
-    }
+.nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 250px;
 }
 
-//para ver la lista plegable
 .nav li:hover>ul {
     display: block;
 }
 
-.nav li ul li,
-input {
+.nav li ul li {
     position: relative;
-    border: transparent;
-    width: 300px;
-    text-align: left;
 }
 
 .nav li ul li ul {
     right: -140px;
     top: 0px;
-}
-
-table {
-    width: 100%;
-    margin-top: 40px;
-    border-collapse: collapse;
-    tr {
-        td {
-            padding: 12px;
-            width: 200px;
-            input {
-                display: block;
-                margin: auto;
-                font-size: 20px;
-                border: solid 3px gold;
-                border-radius: 2em;
-                background: transparent;
-                width: 200px;
-            }
-        }
-    }
-}
-
-.menu {
-    text-align: center;
 }

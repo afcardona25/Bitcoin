@@ -2,10 +2,6 @@ window.addEventListener("load", function() {
     this.document.getElementById("loader").classList.toggle("loader2")
 })
 
-function validate() {
-    return true
-}
-
 var pago1 = document.getElementById("pago1");
 var pago2 = document.getElementById("pago2");
 var pago3 = document.getElementById("pago3");
@@ -53,7 +49,6 @@ function enviarFormulario() {
     if (enviarFormulario == pago1 || pago2 || pago3 && tarjeta && cvv && vencimiento && codigo) {
         alert("Pago exitoso")
         e.preventDefault();
-        window.location(`?comprar=${comprar}`);
     }
 
     return false
