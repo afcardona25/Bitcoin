@@ -114,6 +114,55 @@
     clip-path: circle(0% at 100% 0%);
 }
 
+nav {
+    background: rgb(0, 0, 0);
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: baseline;
+        li {
+            display: block;
+            margin: auto;
+            list-style: none;
+            a {
+                display: block;
+                color: gold;
+                background-color: #000;
+                font-size: 30px;
+                padding: 0px;
+                text-decoration: none;
+                a:hover {
+                    background-color: #434343;
+                }
+            }
+        }
+    }
+}
+
+img {
+    width: 100px;
+}
+
+.nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 250px;
+}
+
+.nav li:hover>ul {
+    display: block;
+}
+
+.nav li ul li {
+    position: relative;
+}
+
+.nav li ul li ul {
+    right: -140px;
+    top: 0px;
+}
+
 @media screen and (max-width: 2000px) {
     .center {
         display: flex;
