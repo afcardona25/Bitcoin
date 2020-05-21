@@ -50,12 +50,13 @@
     </div>
     <div>
         <!--Para la validación del formulario voy a usar el metodo desarrollado en mercado.html llevando a la pagina de pago-->
-        <form action="pago.html" name="transaccion" onsubmit="return validate()">
+       
             <label for="amount">Ingrese las unidades a transar</label>
             <input type="number" name="amount" id="amount" placeholder="ej. 300000">
-            <input type="submit" value="Comprar">
-            <input type="submit" value="Vender">
-        </form>
+            
+            <!--<input type="submit" value="Vender" onclick="vender()">-->
+            <button type="button" id="comprar" onclick="comprar()">comprar</button>
+    
     </div>
 </div>
     <div>

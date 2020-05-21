@@ -1,4 +1,4 @@
-function validate() {
+/*function validate() {
     return true
 }
 
@@ -20,4 +20,13 @@ goToYear = () => {
     let comprar = document.getElementById("comprar").children[1].value;
     console.log("Year: ", year)
     window.location.replace(`?comprar=${comprar}`);
+}*/
+//A partir de aqui, Pruebas del HTML mercado 2
+function comprar(){
+    
+    location.replace("pago.html")
+}
+function vender(){
+    
+    location.replace("pago.html")
 }
