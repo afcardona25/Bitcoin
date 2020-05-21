@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pago en linea</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/pago.css">
+</head>
+
+
+<body>
+
+    <div class="lds-spinner loader" id="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <header class="center">
+        <nav>
+            <form action="">
+                <p>Metodo de pago</p>
+                <input type="radio" id="pago1" name="metododepago" value="paypal" required>
+                <img src="img/paypal.png" alt="">
+                <input type="radio" id="pago2" name="metododepago" value="visa" required>
+                <img src="img/visa.png" alt="">
+                <input type="radio" id="pago3" name="metododepago" value="mastercard" required>
+                <img src="img/mastercard.png" alt="">
+                <br>
+                <label for="tarjeta">Numero de tarjeta de crédito o débito</label>
+                <input class="input" type="text" id="tarjeta" minlength="16" maxlength="16" required>
+                <br>
+                <label for="cvv">CVV</label>
+                <input class="input" type="text" id="cvv" minlength="3" maxlength="3" required>
+                <label for="vencimiento">Fecha de vencimiento(MM/AA)</label>
+                <input class="input" type="text" id="vencimiento" minlength="4" maxlength="4" required>
+                <br>
+                <label for="codigo">Código postal</label>
+                <input class="input" type="text" id="codigo" minlength="4" maxlength="4" required>
+                <br>
+                <input class="enviar" type="submit" onclick="return enviarFormulario()" value="Enviar">
+            </form>
+            <div id="error"></div>
+        </nav>
+    </header>
+
+    <script src="js/pago.js"></script>
+
+</body>
+
+</html>

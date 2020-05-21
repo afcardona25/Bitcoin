@@ -7,8 +7,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 90vh;
-    background: whitesmoke; }
+    height: 100vh;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSgKUP6xzw7UP6800oBK9qEip9NrQzGxDStciO6W5Hm39fyUTyU&usqp=CAU); }
     .center form {
       text-align: center;
       padding: 25px;

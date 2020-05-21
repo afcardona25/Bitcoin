@@ -2,6 +2,9 @@
   margin: 0px;
   padding: 0px; }
 
+body {
+  background: whitesmoke; }
+
 header,
 section {
   max-width: 1500px;
@@ -45,5 +48,24 @@ img {
 .nav li ul li ul {
   right: -140px;
   top: 0px; }
+
+table {
+  width: 100%;
+  margin-top: 40px;
+  border-collapse: collapse; }
+  table tr td {
+    padding: 12px;
+    width: 200px; }
+    table tr td input {
+      display: block;
+      margin: auto;
+      font-size: 20px;
+      border: solid 3px gold;
+      border-radius: 2em;
+      background: transparent;
+      width: 200px; }
+
+.menu {
+  text-align: center; }
 
 /*# sourceMappingURL=mercado.css.map */
