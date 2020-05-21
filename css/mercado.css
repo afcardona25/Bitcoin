@@ -71,4 +71,35 @@ table {
 .menu {
   text-align: center; }
 
-/*# sourceMappingURL=mercado.css.map */
+/*a partir de aqui mercado2.html*/
+input[type=submit] {
+  border: solid 3px gold;
+  border-radius: 2em;
+  background: transparent;
+  width: 200px; }
+
+table {
+  width: 100%;
+  margin-top: 40px;
+  border-collapse: collapse; }
+  table tr {
+    padding: 12px;
+    width: 200px; }
+    table tr th {
+      background-color: #000000;
+      color: gold; }
+
+#resumen {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 2%;
+  margin-right: 2%; }
+  #resumen #estadoMercado {
+    width: 96%; }
+
+#tituloTabla {
+  width: 100%;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 35pt; }

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bitcoin Web</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/mercado.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul class="nav">
+                <a href="index.html"><img src="img/bitcoin.gif" alt="bitcoin gif"></a>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="mercado.html">Mercado</a>
+                    <ul>
+                        <li><a href="#">Mercado actual</a></li>
+                        <li>
+                            <a href="#">Ultimas Noticias</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="perfil.html">Perfil</a>
+                    <ul>
+                        <li><a href="#">Mi perfil</a></li>
+                        <li><a href="#">Mis compras</a></li>
+                        <li><a href="#">Contactos</a></li>
+                        <li>
+                            <form action="index.html" onsubmit="return validate()">
+                                <input class="input" type="submit" value="Cerrar Sesion">
+                            </form>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--Saldo total de Bitcoins a la fecha-->
+    <div id="resumen">
+        <h1>Su saldo Actual es: <span id="saldo"></span> Bitcoins</h1>
+        <h1>Equivalentes a <span id="saldoDolar"></span> Dólares</h1>
+    
+    <div id="estadoMercado">
+        <h2>Precio de mercado <span id="precio"></span>Dólares por Bitcoin</h2>
+        <h3>Se recomienda <span id="recomendacion"></span></h3>
+    </div>
+    <div>
+        <!--Para la validación del formulario voy a usar el metodo desarrollado en mercado.html llevando a la pagina de pago-->
+        <form action="pago.html" name="transaccion" onsubmit="return validate()">
+            <label for="amount">Ingrese las unidades a transar</label>
+            <input type="number" name="amount" id="amount" placeholder="ej. 300000">
+            <input type="submit" value="Comprar">
+            <input type="submit" value="Vender">
+        </form>
+    </div>
+</div>
+    <div>
+        <p id="tituloTabla">Resumen de transacciones</p>
+        <table>
+            <tr>
+                <th>Fecha</th>
+                <th>Tipo de Transacción</th>
+                <th>Bitcoins</th>
+                <th>Equivalente USD</th>
+            </tr>
+        </table>
+    </div>
+    <script src="js/mercado.js"></script>
+</body>
+
+</html>
