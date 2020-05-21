@@ -4,9 +4,11 @@
 }
 
 header,
-section {
+.main,
+footer {
+    width: 90%;
+    margin: 20px auto;
     max-width: 1500px;
-    margin: auto;
 }
 
 nav {
@@ -91,5 +93,53 @@ table {
 }
 
 .menu {
+    text-align: center;
+}
+
+//perfil
+body {
+    background: whitesmoke;
+}
+
+.main .articles {
+    width: 68.5%;
+    margin-right: 1.5%;
+    float: left;
+}
+
+.main .articles article {
+    padding: 20px;
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+aside {
+    width: 30%;
+    background: orange;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+section {
+    article {
+        img {
+            display: block;
+            margin: auto;
+            width: 300px;
+            border-radius: 50%;
+        }
+    }
+}
+
+aside {
+    img {
+        display: block;
+        margin: auto;
+        width: 300px;
+    }
+}
+
+h2 {
     text-align: center;
 }
