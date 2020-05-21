@@ -22,11 +22,11 @@ goToYear = () => {
     window.location.replace(`?comprar=${comprar}`);
 }*/
 //A partir de aqui, Pruebas del HTML mercado 2
-function comprar(){
-    
+function comprar() {
     location.replace("pago.html")
 }
-function vender(){
-    
+
+function vender() {
+
     location.replace("pago.html")
 }

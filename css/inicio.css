@@ -51,3 +51,14 @@ input {
 .nav li ul li ul {
   right: -140px;
   top: 0px; }
+
+h2 {
+  text-align: center;
+  margin: 1%; }
+
+section {
+  text-align: center; }
+  section iframe {
+    margin-right: 1%; }
+
+/*# sourceMappingURL=inicio.css.map */
