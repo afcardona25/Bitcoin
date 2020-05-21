@@ -45,17 +45,22 @@ function comprar(){
 }
 function vender(){
     var monto = Number(document.getElementById("amount").value)
-    saldo -= monto
-    var linea = tabla.insertRow(0)
-    var fecha = linea.insertCell(0)
-    var tipo = linea.insertCell(1)
-    var bitcns = linea.insertCell(2)
-    var equivUSD = linea.insertCell(3)
-    fecha.innerHTML = new Date()
-    tipo.innerHTML = "venta"
-    bitcns.innerHTML = monto
-    equivUSD.innerHTML = monto*precioMercado
-    document.getElementById("saldo").innerHTML = saldo+" "
-    document.getElementById("saldoDolar").innerHTML = saldo*precioMercado+" "
-    alert("Se ha hecho una consignacion a su cuenta de ahorros por: " + monto*precioMercado)
+    if (monto<=saldo){
+        saldo -= monto
+        var linea = tabla.insertRow(0)
+        var fecha = linea.insertCell(0)
+        var tipo = linea.insertCell(1)
+        var bitcns = linea.insertCell(2)
+        var equivUSD = linea.insertCell(3)
+        fecha.innerHTML = new Date()
+        tipo.innerHTML = "venta"
+        bitcns.innerHTML = monto
+        equivUSD.innerHTML = monto*precioMercado
+        document.getElementById("saldo").innerHTML = saldo+" "
+        document.getElementById("saldoDolar").innerHTML = saldo*precioMercado+" "
+        alert("Se ha hecho una consignacion a su cuenta de ahorros por: " + monto*precioMercado)
+    } else {
+        alert("no puede vender más de lo que tiene")
+    }
+    
 }
